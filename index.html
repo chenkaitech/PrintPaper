@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title id="title-el"
+  data-en="PrintPaper · Printable Paper Templates"
+  data-zh="PrintPaper · 打印纸模板生成器">
+  PrintPaper · Printable Paper Templates
+</title>
+
+<meta name="description" id="meta-desc"
+  data-en="PrintPaper is a powerful printable paper generator. Create lined, grid, dot, handwriting, planner, music staff and calligraphy paper with full customization and export to PDF, PNG and AirPrint."
+  data-zh="PrintPaper 是一款强大的打印纸生成工具，可创建横线纸、方格纸、点阵纸、字帖、计划表、五线谱等，并支持完全自定义与 PDF/PNG/AirPrint 导出。">
+
+<link rel="icon" href="printpaper_128.png">
+
+<style>
+:root{
+  --bg:#F6F8FB;
+  --surface:#FFFFFF;
+  --text:#0F172A;
+  --text2:#64748B;
+  --accent:#2563EB;
+  --accent2:#1D4ED8;
+  --chip:#EAF1FF;
+}
+
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Helvetica,Arial,"PingFang SC","Microsoft Yahei",sans-serif
+}
+
+.container{max-width:1100px;margin:0 auto;padding:40px 24px}
+
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
+
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px}
+
+.brand img.icon{width:40px;height:40px;border-radius:10px}
+
+.lang-switch{display:flex;gap:8px;background:#EAF1FF;border-radius:12px;padding:6px}
+
+.lang-switch button{all:unset;cursor:pointer;padding:6px 14px;border-radius:10px;color:var(--text2);font-weight:700}
+
+.lang-switch button.active{background:var(--accent);color:#fff}
+
+.nav-links{display:flex;gap:18px}
+
+.nav-links a{color:var(--text2);font-weight:600;text-decoration:none}
+
+.nav-links a:hover{color:var(--text)}
+
+.hero{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:36px;
+  align-items:center;
+  margin-top:40px
+}
+
+.hero h1{font-size:44px;margin:0 0 16px;line-height:1.1}
+
+.hero p.lead{color:var(--text2);font-size:18px;margin:0 0 24px}
+
+.button{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:linear-gradient(180deg,var(--accent),var(--accent2));
+  color:#fff;
+  font-weight:800;
+  padding:14px 22px;
+  border-radius:14px;
+  text-decoration:none;
+}
+
+.button.ghost{
+  background:transparent;
+  color:var(--text);
+  border:1px solid #D0D7E2;
+}
+
+.card{
+  background:var(--surface);
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 10px 30px rgba(15,23,42,.08)
+}
+
+.section{margin-top:80px}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px
+}
+
+.tag{
+  display:inline-block;
+  background:var(--chip);
+  color:var(--accent);
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:700
+}
+
+.text2{color:var(--text2);line-height:1.7}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px
+}
+
+.gallery img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08)
+}
+
+.footer{
+  margin-top:80px;
+  border-top:1px solid #E5EAF2;
+  padding:30px 0;
+  color:var(--text2);
+  font-size:14px
+}
+
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<nav>
+  <div class="brand">
+    <img class="icon" src="printpaper_128.png">
+    <span>
+      <span data-en="PrintPaper" data-zh="PrintPaper"></span>
+      ·
+      <span data-en="Printable Paper Generator" data-zh="打印纸模板生成器"></span>
+    </span>
+  </div>
+
+  <div class="nav-links">
+    <a href="#features" data-en="Features" data-zh="功能"></a>
+    <a href="#privacy" data-en="Privacy" data-zh="隐私"></a>
+  </div>
+
+  <div class="lang-switch">
+    <button id="btn-en" class="active">EN</button>
+    <button id="btn-zh">中文</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1 data-en="Create your own printable paper in seconds."
+        data-zh="几秒钟创建你专属的打印纸模板"></h1>
+
+    <p class="lead"
+       data-en="Lined, grid, dot, handwriting, planner, calligraphy and music staff paper. Fully customizable and export-ready for PDF, PNG and AirPrint printing."
+       data-zh="横线纸、方格纸、点阵纸、字帖、计划表、书法纸与五线谱，全部可自定义，并支持 PDF / PNG / AirPrint 打印导出。"></p>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a class="button" href="#features"
+         data-en="Explore Templates"
+         data-zh="浏览模板"></a>
+
+      <a class="button ghost" href="#features"
+         data-en="Customize Now"
+         data-zh="开始自定义"></a>
+    </div>
+
+    <p style="margin-top:18px;color:var(--text2)">
+      <span data-en="Templates · Editor · Export PDF · AirPrint · Custom margins · Watermark"
+            data-zh="模板 · 编辑器 · PDF导出 · AirPrint · 边距 · 水印"></span>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3 data-en="Live Preview" data-zh="实时预览"></h3>
+    <p class="text2"
+       data-en="Adjust grid size, margins, colors and instantly see printable output."
+       data-zh="调整网格、边距、颜色，即时生成可打印效果。"></p>
+
+    <div style="height:260px;background:#F3F6FF;border-radius:12px;display:grid;place-items:center;color:var(--text2)">
+      A4 Paper Preview
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <h2 data-en="Core Features" data-zh="核心功能"></h2>
+
+  <div class="grid-3" style="margin-top:20px">
+
+    <div class="card">
+      <div class="tag" data-en="Templates" data-zh="模板库"></div>
+      <h3 data-en="Rich Paper Templates" data-zh="丰富纸张模板"></h3>
+      <p class="text2"
+         data-en="Lined, grid, dot, Cornell notes, handwriting, music staff, storyboard and calligraphy grids."
+         data-zh="横线纸、方格纸、点阵纸、康奈尔笔记、字帖、五线谱、分镜纸等。"></p>
+    </div>
+
+    <div class="card">
+      <div class="tag" data-en="Editor" data-zh="编辑器"></div>
+      <h3 data-en="Advanced Custom Editor" data-zh="高级自定义编辑"></h3>
+      <p class="text2"
+         data-en="Adjust size, margins, line style, color, spacing, watermark and background in real time."
+         data-zh="实时调整尺寸、边距、线条、颜色、间距、水印与背景。"></p>
+    </div>
+
+    <div class="card">
+      <div class="tag" data-en="Export" data-zh="导出"></div>
+      <h3 data-en="PDF / PNG / JSON Export" data-zh="多格式导出"></h3>
+      <p class="text2"
+         data-en="Export high-quality PDF or PNG, or save template configuration as JSON."
+         data-zh="导出高清 PDF / PNG，或保存 JSON 模板配置。"></p>
+    </div>
+
+    <div class="card">
+      <div class="tag" data-en="Print" data-zh="打印"></div>
+      <h3 data-en="AirPrint Support" data-zh="AirPrint 打印"></h3>
+      <p class="text2"
+         data-en="Print directly via AirPrint with safe area preview and hardware margin control."
+         data-zh="支持 AirPrint 打印，并提供安全区与硬件边距控制。"></p>
+    </div>
+
+    <div class="card">
+      <div class="tag" data-en="Library" data-zh="模板管理"></div>
+      <h3 data-en="Save & Organize Templates" data-zh="保存与管理模板"></h3>
+      <p class="text2"
+         data-en="Favorites, tags, recent templates and reusable configurations."
+         data-zh="收藏、标签分类、最近使用与模板复用。"></p>
+    </div>
+
+    <div class="card">
+      <div class="tag" data-en="Privacy" data-zh="隐私"></div>
+      <h3 data-en="Local-first Privacy" data-zh="本地优先隐私"></h3>
+      <p class="text2"
+         data-en="All templates are stored locally. No account required."
+         data-zh="所有模板本地存储，无需账号。"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <h2 data-en="Templates Preview" data-zh="模板预览"></h2>
+
+  <div class="gallery" style="margin-top:20px">
+    <img src="grid.png">
+    <img src="lined.png">
+    <img src="dot.png">
+    <img src="cornell.png">
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section id="privacy" class="section">
+  <div class="card">
+    <h2 data-en="Privacy" data-zh="隐私"></h2>
+    <p class="text2"
+       data-en="PrintPaper does not upload user templates. All data is stored locally on device."
+       data-zh="PrintPaper 不上传任何用户模板数据，所有内容均存储在本地设备。"></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <strong>PrintPaper</strong> ·
+    <span data-en="Printable Paper Generator" data-zh="打印纸模板生成器"></span><br>
+    <span data-en="© 2026 PrintPaper. All rights reserved."
+          data-zh="© 2026 PrintPaper。保留所有权利。"></span>
+  </div>
+</footer>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll("[data-en]").forEach(el=>{
+    const text = el.getAttribute(lang==="zh"?"data-zh":"data-en");
+    if(text) el.textContent = text;
+  });
+
+  document.getElementById("btn-en").classList.toggle("active",lang==="en");
+  document.getElementById("btn-zh").classList.toggle("active",lang==="zh");
+  localStorage.setItem("lang",lang);
+}
+
+document.getElementById("btn-en").onclick=()=>setLang("en");
+document.getElementById("btn-zh").onclick=()=>setLang("zh");
+
+setLang(localStorage.getItem("lang")||"en");
+</script>
+
+</body>
+</html>
